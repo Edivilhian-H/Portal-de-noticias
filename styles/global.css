@@ -12,7 +12,6 @@
   --text-color-primary: #f1f5f9;
   --text-color-secondary: #cbd5e1;
 
-
   --font-family: "Archivo", sans-serif;
   --h1: 800 24px/135% var(--font-family);
   --h2: 800 16px/140% var(--font-family);
@@ -20,7 +19,6 @@
   --text-span: 600 14px/145% var(--font-family);
   --text: 400 14px/140% var(--font-family);
   --text-ms: 400 14px/160% var(--font-family);
-
 }
 
 body {
@@ -29,17 +27,23 @@ body {
   font: var(--text);
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
-a:hover{
+a:hover {
   color: var(--brand-color-light);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font: inherit;
+}
+
+img {
+  max-width: 100%;
 }
 
 .container {
@@ -48,10 +52,20 @@ h1, h2, h3 {
   margin-inline: auto;
 }
 
-.grid{
-  display: grid;
+main {
+  margin-top: 40px;
 }
 
-.grid-flow-col {
-  grid-auto-flow: column;
+.content-tag {
+  display: inline-block;
+  padding: 4px 8px;
+
+  border-radius: 4px;
+  background: var(--brand-color-dark, #1d4ed8);
+  box-shadow: 0 4px 16px 0 rgba(2, 6, 23, 0.25);
+
+  font: 500 10px/120% var(--font-family);
+  color: var(--text-color-primary, #f1f5f9);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
